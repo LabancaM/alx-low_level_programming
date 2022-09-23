@@ -1,5 +1,6 @@
-#include "main.h"
+#include <string.h>
 #include <stdio.h>
+#include "0-strcat.h"
 
 /**
  * main - check the code
