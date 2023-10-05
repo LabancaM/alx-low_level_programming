@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*This function print string
- *on the standard output
+*on the standard output
 */
 int main(void)
 {
