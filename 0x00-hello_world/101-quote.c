@@ -14,6 +14,6 @@ int main(void)
 	{
 		putchar(phrase[i]);
 	}
-	putchar(1);
+	putchar("\n");
 	return (1);
 }
