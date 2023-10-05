@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
 *This function print string
 *on the standard output
