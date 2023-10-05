@@ -14,5 +14,6 @@ int main(void)
 	{
 		putchar(phrase[i]);
 	}
+	fputs("\n", stdout);
 	return (1);
 }
