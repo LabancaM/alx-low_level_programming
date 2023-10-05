@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i, sizephrase;
-	char phrase[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char phrase[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
 	sizephrase = sizeof(phrase) / sizeof(phrase[0]);
 	for (i = 0; i < sizephrase; i++)
