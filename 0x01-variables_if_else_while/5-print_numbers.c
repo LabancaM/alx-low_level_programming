@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	int n = 97, m = 122;
+	int n = 0;
 
-	while (n <= m)
+	while (n < 10)
 	{
-		putchar(n);
+		printf("%d", n);
 		n++;
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }

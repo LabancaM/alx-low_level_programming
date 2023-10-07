@@ -12,6 +12,11 @@ int main(void)
 
 	while (n <= m)
 	{
+		if (n == 101 || n == 113)
+		{
+			n++;
+			continue;
+		}
 		putchar(n);
 		n++;
 	}
