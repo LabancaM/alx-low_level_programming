@@ -19,7 +19,6 @@ int main(void)
 			if (n == 56 && m == 57)
 				break;
 			putchar(m);
-			
 			a = 56;
 			while (a > 0)
 			{

@@ -12,7 +12,7 @@ int main(void)
 
 	while (n <= 55)
 	{
-		m = n+1;
+		m = n + 1;
 		while (m <= 56 && m > n)
 		{
 			l = m + 1;
@@ -23,7 +23,6 @@ int main(void)
 				if (n == 55 && m == 56 && l == 57)
 					break;
 				putchar(l);
-			
 				a = 56;
 				while (a > 0)
 				{
