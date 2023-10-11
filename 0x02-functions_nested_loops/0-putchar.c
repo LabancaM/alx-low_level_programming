@@ -18,6 +18,5 @@ int main(void)
 	{
 		_putchar(mot[i]);
 	}
-
 	return (0);
 }
