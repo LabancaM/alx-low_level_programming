@@ -8,31 +8,40 @@
  */
 int main(void)
 {
-	int a, n = 48, m, l;
+	int a, n = 48, m, p, q;
 
-	while (n <= 55)
+	while (n <= 57)
 	{
-		m = n+1;
-		while (m <= 56 && m > n)
+		m = 48;
+		while (m <= 57)
 		{
-			l = m + 1;
-			while (l <= 57 && l > m)
+			if (n == 57 && m == 57)
+				break;
+			p = 48;
+			while (p <= 57)
 			{
-				putchar(n);
-				putchar(m);
-				if (n == 55 && m == 56 && l == 57)
-					break;
-				putchar(l);
-			
-				a = 56;
-				while (a > 0)
+				q = p + 1;
+				while (q <= 57)
 				{
-					a -= 12;
-					putchar(a);
-					if (a == 32)
-						break;
+					putchar(n);
+					putchar(m);
+					putchar(32);
+					putchar(p);
+					putchar(q);
+					putchar(44);
+					/*
+					a = 56;
+					while (a > 0)		
+					{
+						a -= 12;
+						putchar(a);
+						if (a == 32)
+							break;
+					}
+					*/
+					q++;
 				}
-				l++;
+				p++;
 			}
 			m++;
 		}
