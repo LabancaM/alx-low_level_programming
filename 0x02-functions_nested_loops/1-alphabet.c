@@ -4,11 +4,9 @@
 #include "main.h"
 
 /**
- * function print_alphabet - Entry point
+ * print_alphabet - print alphabet in lower case
  *
- * print alphabet in lower case
- *
- * Return: nothing (Success)
+ * Return: nothing 
  */
 void print_alphabet(void)
 {
