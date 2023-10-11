@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	char mot[] = "_putchar\n";
+	char mot[] = "_putchar";
 	int size, i;
 	
 	size = sizeof(mot) / sizeof(mot[0]);
@@ -18,5 +18,6 @@ int main(void)
 	{
 		_putchar(mot[i]);
 	}
+	_putchar('\n');	
 	return (0);
 }
