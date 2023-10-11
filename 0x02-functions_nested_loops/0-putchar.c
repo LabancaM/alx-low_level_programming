@@ -12,6 +12,7 @@ int main(void)
 {
 	char mot[] = "_putchar\n";
 	int size, i;
+	
 	size = sizeof(mot) / sizeof(mot[0]);
 	for (i = 0; i < size ; i++)
 	{
