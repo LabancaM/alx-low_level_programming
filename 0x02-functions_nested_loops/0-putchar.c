@@ -10,12 +10,11 @@
  */
 int main(void)
 {
-	char mot[] = "putchar";
+	char mot[] = "_putchar";
 	int size, i;
 
-	_putchar(95);
 	size = sizeof(mot) / sizeof(mot[0]);
-	for (i = 0; i < size; i++)
+	for (i = 0; i < size - 1; i++)
 	{
 		_putchar(mot[i]);
 	}
