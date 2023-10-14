@@ -4,13 +4,13 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * jack_bauer - print each minute of the day
  *
- * Return: Always 0 (Success)
+ * Return: nothing
  */
 void jack_bauer(void)
 {
-	int  n, m , i, j;
+	int  n, m, i, j;
 
 	n = 48;
 	while (n < 51)
@@ -40,5 +40,5 @@ void jack_bauer(void)
 		}
 		n++;
 	}
-	return ;
+	return;
 }
