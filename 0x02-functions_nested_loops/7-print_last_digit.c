@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - get last digit of integer 
+ * print_last_digit - get last digit of integer
  *
  * @n: input integer
  * Return: last digit of input digit
