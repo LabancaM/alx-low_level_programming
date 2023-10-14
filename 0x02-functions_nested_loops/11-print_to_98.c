@@ -2,9 +2,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_to_98 - print enter number to 98
  *
- * Return: Always 0 (Success)
+ * @n: input integer
+ * Return: nothing
  */
 void print_to_98(int n)
 {
@@ -14,10 +15,7 @@ void print_to_98(int n)
 	{
 		while (m < 98)
 		{
-			if (m < 10)
-				_putchar(m+48);
-			_putchar(',');
-			_putchar(' ');
+			printf("%d, ", m);
 			m++;
 		}
 	}
@@ -26,8 +24,6 @@ void print_to_98(int n)
 		while ( m > 98)
 		{
 			printf("%d, ", m);
-			_putchar(',');
-			_putchar(' ');
 			m--;
 		}
 	}
