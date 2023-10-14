@@ -4,9 +4,9 @@
 #include "main.h"
 
 /**
- * times_table - 9 * 9 mulitipcation table 
+ * times_table - 9*9 mulitipcation table
  *
- * Return: nothing 
+ * Return: nothing
  */
 void times_table(void)
 {
@@ -34,7 +34,7 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(i * j + 48);
 				}
-				if (j >0 && j < 9)
+				if (j > 0 && j < 9)
 					_putchar(',');
 			}
 		}
