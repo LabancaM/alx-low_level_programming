@@ -6,6 +6,7 @@
 /**
  * _islower - lower case of alphabet
  *
+ * @c: caracter to test
  * Return: 1 if is upper case other wise 0
  */
 int _islower(int c)
