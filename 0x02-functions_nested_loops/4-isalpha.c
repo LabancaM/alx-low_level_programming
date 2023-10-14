@@ -4,9 +4,10 @@
 #include "main.h"
 
 /**
- * _isalpha- check if caracter is alpha 
+ * _isalpha - check if caracter is alpha
  *
  * @c: input caracter
+ *
  * Return: 1 if caracter is alpha otherwise 0
  */
 int _isalpha(int c)
