@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+
+int sum_natural(void);
+/**
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    sum_natural();
+    return (0);
+}
 
 /**
  * sum_natural - compute the addition of 3 and 5 multiple
