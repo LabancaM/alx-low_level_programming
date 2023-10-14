@@ -4,9 +4,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _islower - lower case of alphabet
  *
- * Return: Always 0 (Success)
+ * Return: 1 if is upper case other wise 0
  */
 int _islower(int c)
 {
