@@ -9,8 +9,8 @@ int sum_natural(void);
  */
 int main(void)
 {
-    sum_natural();
-    return (0);
+	sum_natural();
+	return (0);
 }
 
 /**
