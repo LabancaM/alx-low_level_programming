@@ -4,9 +4,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_last_digit - get last digit of integer 
  *
- * Return: Always 0 (Success)
+ * @n: input integer
+ * Return: last digit of input digit
  */
 int print_last_digit(int n)
 {
