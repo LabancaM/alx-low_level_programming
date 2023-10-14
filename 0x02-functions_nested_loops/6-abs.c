@@ -4,9 +4,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * _abs - find absolute value of a number
  *
- * Return: Always 0 (Success)
+ * @n: input integer
+ * Return: n absolute integer
  */
 int _abs(int n)
 {
