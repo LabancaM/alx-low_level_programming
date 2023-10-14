@@ -4,11 +4,11 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * add - do the addition of two integer
  *
- * Return: Always 0 (Success)
+ * Return: result of addition
  */
 int add(int a, int b)
 {
-	return (a+b);
+	return (a + b);
 }
