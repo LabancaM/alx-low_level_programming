@@ -4,9 +4,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * print_sign - chech integer sign
+ * 
+ * @n: input integer
+ * Return: 1 if is positif -1 if is negatif otherwise 0
  */
 int print_sign(int n)
 {
