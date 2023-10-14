@@ -29,4 +29,5 @@ int sum_natural(void)
 	}
 	printf("%d\n", sum);
 	return (sum);
+
 }
