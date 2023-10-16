@@ -21,8 +21,8 @@ int main(void)
 void fibonacci(void)
 {
 	int n = 96, i = 0;
-	unsigned long int f1 = 1, f2 = 2;
-	unsigned long int f;
+	unsigned long long int f1 = 1, f2 = 2;
+	unsigned long long int f;
 
 	printf("1, 2, ");
 	while (i < n - 1)
