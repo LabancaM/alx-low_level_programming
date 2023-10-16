@@ -21,18 +21,18 @@ int main(void)
 void fibonacci(void)
 {
 	int n = 96, i = 0;
-	unsigned long long int f1 = 1, f2 = 2;
-	unsigned long long int f;
+	unsigned long int f1 = 1, f2 = 2;
+	unsigned long int f;
 
 	printf("1, 2, ");
 	while (i < n - 1)
 	{
 		f = f1 + f2;
-		printf("%lld, ", f);
+		printf("%ld, ", f);
 		f1 = f2;
 		f2 = f;
 		i++;
 	}
 	f = f1 + f2;
-	printf("%lld\n", f);
+	printf("%ld\n", f);
 }
