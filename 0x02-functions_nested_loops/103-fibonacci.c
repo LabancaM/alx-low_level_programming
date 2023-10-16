@@ -23,7 +23,7 @@ void fibonacci(void)
 	long int f1 = 1, f2 = 2;
 	long int f = 2, sum = 2;
 
-	while ( f <= 4000000)
+	while (f <= 4000000)
 	{
 		f = f1 + f2;
 		if (f % 2 == 0)
