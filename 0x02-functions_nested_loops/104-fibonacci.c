@@ -28,11 +28,11 @@ void fibonacci(void)
 	while (i < n - 1)
 	{
 		f = f1 + f2;
-		printf("%ld, ", f);
+		printf("%lld, ", f);
 		f1 = f2;
 		f2 = f;
 		i++;
 	}
 	f = f1 + f2;
-	printf("%ld\n", f);
+	printf("%lld\n", f);
 }
