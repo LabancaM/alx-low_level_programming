@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "Debugging"
+git commit -m "pointer array string"
 git push 
