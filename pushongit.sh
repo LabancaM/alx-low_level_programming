@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "variable with if else"
+git commit -m "Debugging"
 git push 
