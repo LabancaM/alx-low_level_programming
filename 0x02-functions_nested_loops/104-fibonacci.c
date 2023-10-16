@@ -20,7 +20,7 @@ int main(void)
  */
 void fibonacci(void)
 {
-	int n = 96, i = 0;
+	int n = 93, i = 0;
 	unsigned long int f1 = 1, f2 = 2;
 	unsigned long int f;
 
