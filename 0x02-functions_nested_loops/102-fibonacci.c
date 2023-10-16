@@ -14,9 +14,9 @@ int main(void)
 }
 
 /**
- * sum_natural - compute the addition of 3 and 5 multiple
+ * fibonacci - print the 50th fibonacci value 
  *
- * Return: result of 3 and 5 multiple addition
+ * Return: nothing 
  */
 void fibonacci(void)
 {
@@ -24,7 +24,7 @@ void fibonacci(void)
 	long int f1 = 1, f2 = 2;
 	long int f;
 
-	while (i < n-1)
+	while (i < n - 1)
 	{
 		if (i == 0)
 		{
