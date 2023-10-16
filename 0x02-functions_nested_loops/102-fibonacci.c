@@ -14,9 +14,9 @@ int main(void)
 }
 
 /**
- * fibonacci - print the 50th fibonacci value 
+ * fibonacci - print the 50th fibonacci value
  *
- * Return: nothing 
+ * Return: nothing
  */
 void fibonacci(void)
 {
