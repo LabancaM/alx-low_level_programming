@@ -15,7 +15,7 @@ void rev_string(char *s)
 		len++;
 	for (i = 0; i < len / 2; i++)
 	{
-		svg = s[i];	
+		svg = s[i];
 		s[i] = s[len - i - 1];
 		s[len - i - 1] = svg;
 	}
