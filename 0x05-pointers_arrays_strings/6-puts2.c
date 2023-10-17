@@ -9,7 +9,6 @@
 void puts2(char *str)
 {
 	int len = 0;
-	char svg;
 
 	while (str[len] != '\0')
 	{
