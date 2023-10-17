@@ -1,34 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _atoi - convert string into number
+ * main - check the code
  *
- * @s: char input *s
- * Return: number  in string
+ * Return: Always 0.
  */
-int _atoi(char *s)
+int main(void)
 {
-	int len = 0, digit, n = 0, cpt = 0;
-	int stop = 0;
+    int nb;
 
-	while (s[len] != '\0' && stop == 0)
-	{
-		if (s[len] == '-')
-			cpt++;
-		if (s[len] >= '0' && s[len] <= '9')
-		{
-			digit = s[len] - '0';
-			n = n * 10 + digit;
-			if (s[len + 1] < '0' || s[len + 1] > '9')
-			{
-				n += 0;
-				stop = 1;
-				break;
-			}
-		}
-		len++;
-	}
-	if (cpt % 2 && n != 0)
-		n = -n;
-	return (n);
+    return (0);
 }
