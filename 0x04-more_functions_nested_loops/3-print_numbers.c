@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_numbers - check if integer is a digit
+ * print_numbers - print digit
  *
  * Return: nothing 
  */
