@@ -3,7 +3,7 @@
 /**
  * print_most_numbers - print digits exoeped 2 and 4
  *
- * Return: nothing 
+ * Return: nothing
  */
 void print_most_numbers(void)
 {
