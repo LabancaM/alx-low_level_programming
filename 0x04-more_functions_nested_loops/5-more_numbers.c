@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * more_numbers - print digits exoeped 2 and 4
+ * more_numbers - print numbers from 0 to 14
  *
- * Return: nothing 
+ * Return: nothing
  */
 void more_numbers(void)
 {
@@ -17,8 +17,8 @@ void more_numbers(void)
 				_putchar(i + 48);
 			else
 			{
-				_putchar(i / 10);
-				_putchar(i % 10);
+				_putchar(i / 10 + 48);
+				_putchar(i % 10 + 48);
 			}
 		}
 		_putchar('\n');
