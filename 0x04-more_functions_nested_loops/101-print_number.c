@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_triangle - print number
+ * print_number - print number
  *
  * @n: input  number
  * Return: nothing
@@ -17,7 +17,8 @@ void print_number(int n)
 		n = -1 * n;
 	}
 	a = n, l = n;
-	while (a / 10){
+	while (a / 10)
+	{
 		a /= 10;
 		cpt++;
 	}
@@ -26,7 +27,7 @@ void print_number(int n)
 	{
 		m = 1;
 		k = p;
-		while ( k--)
+		while (k--)
 			m *= 10;
 		_putchar(l / m + 48);
 		l = l % m;
