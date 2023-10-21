@@ -15,7 +15,7 @@ int main(void)
 		while (n % i == 0 && n != i)
 		{
 			n /= i;
-		}	
+		}
 	}
 	printf("%lu\n", n);
 	return (0);
