@@ -18,6 +18,8 @@ char *_strncpy(char *dest, char *src, int n)
 		j++;
 	if (n > j)
 		n = j;
+	else if (n == 0 || i == 0)
+		return (dest);
 	for (l = 0; l < n; l++)
 	{
 		dest[l] = src[l];
