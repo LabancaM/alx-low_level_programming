@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * square_root - compute the square root 
+ * square_root - compute the square root
  *
  * @n: the number which we compute the square root
  * @m: the second input
