@@ -1,6 +1,21 @@
 #include "main.h"
 
 /**
+ * square_root - compute the square root 
+ *
+ * @n: the number which we compute the square root
+ * @m: the second input
+ * Return: the square root otherwise -1
+ */
+int square_root(int n, int m)
+{
+	if (m * m == n)
+		return (m);
+	else if (m * m > n)
+		return (-1);
+	return (square_root(n, ++m));
+}
+/**
  * _sqrt_recursion - square root of a number
  *
  * @n: first input integer
@@ -8,15 +23,7 @@
  */
 int _sqrt_recursion(int n)
 {
-	int m = n / 2;
-
 	if (n < 0)
 		return (-1);
-	if (n == 0)
-		return (1);
-	if ((m - 1) * (m - 1) != n)
-		return _sqrt_recursion(n)
-	for (i = 1; i )
-		if a x a == n
-	return x * _sqrt_recursion(n);
+	square_root(n, 1);
 }
