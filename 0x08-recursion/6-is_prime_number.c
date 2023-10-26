@@ -2,7 +2,7 @@
 
 /**
  * prime - check if is prime
- * 
+ *
  * @n: the number will check
  * @m: second input
  * Return: 1 if is prime otherwise 0
