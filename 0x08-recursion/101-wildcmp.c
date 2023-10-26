@@ -1,33 +1,24 @@
 #include "main.h"
 
-int str_length(char *s)
-{
-	int n = 0;
-	if (*s != '\0')
-	{
-		n += 1;
-		return (n + str_length(++s));
-	}
-	return (n);
-}
-int palindrome(char *s, int n, int k)
-{
-	if (s[k] != s[n-k-1])
-		return 0;
-	if (k == n / 2)
-		return 1;
-	return (palindrome(s, n, ++k));
-}
 /**
- * is_palindrome - check if a string is palindrome
+ * wildcmp - do a wild compare for two string
  *
- * @s: input string
- * Return: 1 if is palindrome otherwise 0
+ * @s1: input string
+ * @s2: input string
+ * Return: 1 if the are the same 0
  */
-int is_palindrome(char *s)
+int wildcmp(char *s1, char *s2)
 {
-	int n = str_length(s);
-	if (n == 0)
-		return 0;
-	return (palindrome(s, n, 0));
+	if (*s2 == *s1)
+		return (wildcmp(s1 + 1, s2 + 1));
+	if (*s1 == '\0' && *s2 == '\0')
+		return (1);
+	if (*s2 == '*')
+	{
+		if (*(s2 + 1) != '\0' && *s1 != *(s2 + 1))
+			return (0);
+		if (*(s2 + 1) == '\0')
+			return (1);
+	}
+	return 0;
 }
