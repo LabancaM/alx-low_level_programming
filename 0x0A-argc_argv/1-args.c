@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * @argc: number of argument in command line
  * @argv: array of arguments
@@ -12,5 +12,5 @@ int main(int argc, char **argv)
 {
 	(void) argv;
 	printf("%d\n", argc - 1);
-    	return (0);
+	return (0);
 }
