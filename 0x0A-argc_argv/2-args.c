@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * @argc: number of argument in command line
  * @argv: array of arguments
@@ -14,5 +14,5 @@ int main(int argc, char **argv)
 
 	for (i = 0; i < argc; i++)
 		printf("%s\n", argv[i]);
-    	return (0);
+	return (0);
 }
