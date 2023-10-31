@@ -16,10 +16,20 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
-	while (s1[i] != '\0')
-		i++;
-	while (s2[j] != '\0')
+	if (s1 == NULL)
+		i = 0;
+	else
+	{
+		while (s1[i] != '\0')
+			i++;
+	}
+	if (s2 == NULL)
+		j=0;
+	else
+	{
+		while (s2[j] != '\0')
 		j++;
+	}
 	size = i + j;
 	str = malloc(sizeof(char) * size);
 	if (str == NULL)
@@ -27,6 +37,6 @@ char *str_concat(char *s1, char *s2)
 	for (k = 0; k < i; k++)
 		str[k] = s1[k];
 	for (k = i; k < size; k++)
-		str[k] = s2[k-i];
+		str[k] = s2[k - i];
 	return (str);
 }
