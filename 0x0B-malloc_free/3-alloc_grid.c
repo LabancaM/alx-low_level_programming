@@ -27,6 +27,7 @@ int **alloc_grid(int width, int height)
 			{
 				free(tab[j]);
 			}
+			free(tab)
 			return (NULL);
 		}
 	}
