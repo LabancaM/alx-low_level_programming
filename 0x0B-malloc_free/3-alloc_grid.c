@@ -5,7 +5,7 @@
 /**
  * alloc_grid - build grid
  * @width: width of grid
- * @heigth: heigth of grid
+ * @height: heigth of grid
  *
  * Return: integer array of array
  */
@@ -20,7 +20,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	for (i = 0; i < width; i++)
 	{
-		*(tab + i) = malloc (sizeof(int) * height);
+		*(tab + i) = malloc(sizeof(int) * height);
 		if (*(tab + i) == NULL)
 			return (NULL);
 	}
