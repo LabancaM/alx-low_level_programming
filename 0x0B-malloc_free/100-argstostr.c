@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * str_concat - concatenate two string
- * @s1: destination string
- * @s2: source string
+ * argstostr - for display argument
+ * @ac: number of argument
+ * @av: array of argument
  *
- * Return: string
+ * Return: arguments
  */
 char *argstostr(int ac, char **av)
 {
