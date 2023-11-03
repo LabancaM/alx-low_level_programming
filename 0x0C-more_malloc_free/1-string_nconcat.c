@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * malloc_checked - check malloc
- * @b: integer
+ * string_nconcat - concatenate
+ * @s1: string
+ * @s2: string
+ * @n: int
  *
- * Return: pointer
+ * Return: string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
