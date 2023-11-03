@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * calloc - check calloc
+ * _calloc - check calloc
  * @nmemb: integer
  * @size: integer
  *
