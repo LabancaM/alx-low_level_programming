@@ -1,17 +1,18 @@
-#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 #include "dog.h"
 void print_dog(struct dog *d)
 {
 	if (d->name == NULL)
-		print("NIL\n");
+		printf("NIL\n");
 	else
-		print("Name: %s", d->name);
-	if (d->age == NULL)
-		print("NIL\n");
+		printf("Name: %s\n", d->name);
+	if (d->age)
+		printf("Age: %f\n", d->age);
 	else
-		print("Name: %s", d->name);
-	if (d->name == NULL)
-		print("NIL\n");
+		printf("NIL\n");
+	if (d->owner == NULL)
+		printf("NIL\n");
 	else
-		print("Name: %s", d->name);
+		printf("Owner: %s\n", d->owner);
 }
