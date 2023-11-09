@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - searchs for an integer
+ * main - main function
  *@argc: number of arguments
- *@argv: array with arguments
+ *@argv: array of arguments
  *
- * Return: no return
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
