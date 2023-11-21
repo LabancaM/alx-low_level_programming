@@ -6,7 +6,7 @@
 /**
  * add_nodeint - add node in list
  * @head: list of list
- * @str: string
+ * @n: integer
  *
  * Return: listint_t
  */
