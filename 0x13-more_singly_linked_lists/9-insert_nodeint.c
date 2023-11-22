@@ -22,32 +22,31 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (insert == NULL || head == NULL)
 		return (NULL);
 	insert->n = n;
-	while (*head != NULL)
+	if (idx == 0)
 	{
-		if (idx == 0)
-		{
-			save = *head;
-			*head = insert;
-			(*head)->next = save;
-			return (insert);
-		}
-		else
+		save = *head;
+		if (*head == NULL)
+			return (NULL);
+		*head = insert;
+		insert->next = save;
+		return (insert);
+	}
+	else
+	{
+		save = *head;
+		while (i <= idx && save != NULL)
 		{
 			if ((i + 1) == idx)
-				previous = *head;
-			if (i == idx)
 			{
-				save = *head;
+				previous = save;
+				svg = save->next;
 				previous->next = insert;
-				insert->next = save;
-				*head = svg;
+				insert->next = svg;
 				return (insert);
 			}
+			i++;
+			save = save->next;
 		}
-		i++;
-		*head = (*head)->next;
 	}
-	if (idx > i)
-		return (NULL);
 	return (NULL);
 }
