@@ -4,47 +4,42 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - print element in list
+ * delete_nodeint_at_index - delete element in list
  * @head: list of list
  * @index: unsigned integer
  *
- * Return: listint_t
+ * Return: 1 if deleting was successuf -1 otherwise
  */
-int delete_nodeint_at_index(listint_t **head, unsigned int index);
+int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
+	listint_t *save = NULL, *svg = NULL, *svg2 = NULL;
 	unsigned int i = 0;
-	listint_t *save = NULL, *insert = NULL;
-	listint_t *svg = NULL, *previous = NULL;
 
-	insert = malloc(sizeof(listint_t));
-	svg = *head;
-	if (insert == NULL || head == NULL)
-		return (NULL);
-	insert->n = n;
-	while(*head != NULL)
+	if (index == 0)
 	{
-		if (idx == 0)
-		{
-			save = *head;
-			*head = insert;
-			(*head)->next = save;
-			return (insert);
-		}
-		else
-		{
-			if ((i + 1) == idx)
-				previous = *head;
-			if (i == idx)
-			{
-				save = *head;
-				previous->next = insert;
-				insert->next = save;
-				*head = svg;
-				return (insert);
-			}
-		}
-		i++;
-		*head = (*head)->next;
+		save = *head;
+		if (save == NULL)
+			return (-1);
+		*head = save->next;
+		free(save);
+		return (1);
 	}
-	return (NULL);
+	else
+	{
+		save = *head;
+		while (i <= index && save != NULL)
+		{
+			if ((i + 1) == index)
+			{
+				svg = save;
+				svg2 = save->next->next;
+				free(save->next);
+				svg->next = svg2;
+				return (1);
+			}
+			i++;
+			save = save->next;
+		}
+	}
+	return (-1);
 }
