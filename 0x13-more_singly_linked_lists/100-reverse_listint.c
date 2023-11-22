@@ -7,7 +7,7 @@
  * reverse_listint - delete element in list
  * @head: list of list
  *
- * Return: listint_t 
+ * Return: listint_t
  */
 listint_t *reverse_listint(listint_t **head)
 {
