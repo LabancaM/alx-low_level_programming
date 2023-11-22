@@ -4,9 +4,9 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - print element in list
+ * insert_nodeint_at_index - print element in list
  * @head: list of list
- * @ix: unsigned integer
+ * @idx: unsigned integer
  * @n: integer
  *
  * Return: listint_t
@@ -22,7 +22,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (insert == NULL || head == NULL)
 		return (NULL);
 	insert->n = n;
-	while(*head != NULL)
+	while (*head != NULL)
 	{
 		if (idx == 0)
 		{
@@ -47,5 +47,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		i++;
 		*head = (*head)->next;
 	}
+	if (idx > i)
+		return (NULL);
 	return (NULL);
 }
