@@ -4,42 +4,24 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - delete element in list
+ * reverse_listint - delete element in list
  * @head: list of list
- * @index: unsigned integer
  *
- * Return: 1 if deleting was successuf -1 otherwise
+ * Return: listint_t 
  */
-int delete_nodeint_at_index(listint_t **head, unsigned int index)
+listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *save = NULL, *svg = NULL, *svg2 = NULL;
-	unsigned int i = 0;
+	listint_t *save = NULL, *svg = NULL;
 
-	if (index == 0)
+	if (*head == NULL)
+		return (NULL);
+	while (*head != NULL)
 	{
+		svg = (*head)->next;
+		(*head)->next = save;
 		save = *head;
-		if (save == NULL)
-			return (-1);
-		*head = save->next;
-		free(save);
-		return (1);
+		*head = svg;
 	}
-	else
-	{
-		save = *head;
-		while (i <= index && save != NULL)
-		{
-			if ((i + 1) == index)
-			{
-				svg = save;
-				svg2 = save->next->next;
-				free(save->next);
-				svg->next = svg2;
-				return (1);
-			}
-			i++;
-			save = save->next;
-		}
-	}
-	return (-1);
+	*head = save;
+	return (*head);
 }
