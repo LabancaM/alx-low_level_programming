@@ -3,27 +3,31 @@
 
 /**
  * print_binary - convert decimal to binary
- * @n: decimal number
+ * @n: unsigned integer
  * Return: no return
  */
 void print_binary(unsigned long int n)
 {
-	int i, binary, flag;
+	int i, length = 0;
+	unsigned long int new;
 
-	flag = 0;
-	if (n == 0)
-		_putchar('0');
-	for  (i = 63; i >= 0; i--)
+	new = 1 << length;
+	while (new < n)
 	{
-		binary = (n >> i);
-		if (binary != 0)
-			flag = 1;
-		if (flag != 0)
+		length++;
+		new = 1 << length;
+	}
+	if (new > n && length > 0)
+		length--;
+	for (i = length; i > -1; i--)
+	{
+		new = 1 << i;
+		if(n >= new)
 		{
-			if (binary & 1)
-				_putchar('1');
-			else
-				_putchar('0');
+			_putchar('1');
+			n -= new;
 		}
+		else
+			_putchar('0');
 	}
 }
